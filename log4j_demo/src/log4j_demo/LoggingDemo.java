@@ -10,7 +10,9 @@ public class LoggingDemo {
 
 	public static void main(String[] args) {
 		BasicConfigurator.configure();
-		PropertyConfigurator.configure("src/Log4j_demo/Log4j.xml");
+		PropertyConfigurator.configure("src/Log4j_demo/Log4j.properties");
+
+		//PropertyConfigurator.configure("src/Log4j_demo/Log4j.xml");
 		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe"); 
 		   WebDriver driver=new ChromeDriver();
 		 //  Logger log = Logger.getLogger("devpinoyLogger");
